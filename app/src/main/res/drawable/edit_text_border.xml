@@ -1,0 +1,20 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Border color when EditText is focused -->
+    <item android:state_focused="true">
+        <shape>
+            <corners android:radius="8dp" />
+            <solid android:color="@android:color/transparent" />
+            <stroke android:width="2dp" android:color="#F16820" />
+            <padding android:top="8dp" android:bottom="8dp" />
+        </shape>
+    </item>
+    <!-- Border color when EditText is not focused -->
+    <item>
+        <shape>
+            <corners android:radius="8dp" />
+            <solid android:color="@android:color/transparent" />
+            <stroke android:width="2dp" android:color="@null" />
+            <padding android:top="8dp" android:bottom="8dp" />
+        </shape>
+    </item>
+</selector>

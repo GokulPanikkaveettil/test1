@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <ImageButton
+        android:id="@+id/profileUpdateView"
+        android:layout_width="158dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="116dp"
+        android:background="#F16820"
+        android:contentDescription="Profile Update"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profileUpdateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Profile"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profileUpdateView"
+        app:layout_constraintEnd_toEndOf="@+id/profileUpdateView"
+        app:layout_constraintStart_toStartOf="@+id/profileUpdateView"
+        app:layout_constraintTop_toTopOf="@+id/profileUpdateView" />
+
+
+    <ImageButton
+        android:id="@+id/myPropertysList"
+        android:layout_width="158dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="16dp"
+        android:background="#F16820"
+        android:contentDescription="My Propertys"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/myPropertysText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My propertys"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/myPropertysList"
+        app:layout_constraintEnd_toEndOf="@+id/myPropertysList"
+        app:layout_constraintStart_toStartOf="@+id/myPropertysList"
+        app:layout_constraintTop_toTopOf="@+id/myPropertysList" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include layout="@layout/sidebar_navigation" />
+    </androidx.drawerlayout.widget.DrawerLayout>
